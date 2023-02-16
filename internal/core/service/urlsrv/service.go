@@ -29,7 +29,7 @@ func (srv *service) Create(originalUrl string, username string) (domain.Url, err
 
 	shortenUrl := srv.hashGenerator.GetHash(originalUrl + username)
 	// check if exist
-	if u, err := srv.urlRepository.Get(shortenUrl); err != nil {
+	if u, err := srv.urlRepository.Get(shortenUrl); err == nil {
 		return u, nil
 	}
 

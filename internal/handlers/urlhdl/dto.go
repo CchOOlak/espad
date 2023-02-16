@@ -13,7 +13,7 @@ type BodyCreate struct {
 // TODO: use environment variables instead
 const (
 	PROTOCOL = "https"
-	HOSTNAME = "sh.co"
+	HOSTNAME = "shUrl.co"
 )
 
 func MakeResponseUrl(url domain.Url) domain.Url {
@@ -25,5 +25,5 @@ func MakeResponseUrl(url domain.Url) domain.Url {
 }
 
 func MakeFullUrl(path string) string {
-	return fmt.Sprintf("%s//%s/%s", PROTOCOL, HOSTNAME, path)
+	return fmt.Sprintf("%s://%s/%s", PROTOCOL, HOSTNAME, path)
 }
