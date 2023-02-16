@@ -4,5 +4,5 @@ import "espad/internal/core/domain"
 
 type UrlService interface {
 	Create(originalUrl string, username string) (domain.Url, error)
-	Get(shortenUrl string) (string, error)
+	Get(shortenUrl string) (domain.Url, error)
 }
