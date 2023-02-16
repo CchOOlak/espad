@@ -9,6 +9,7 @@ import (
 )
 
 type memstorage struct {
+	// TODO: use Database (like MongoDB or Redis) for storage
 	storage map[string][]byte
 }
 
