@@ -7,7 +7,7 @@ GO Version: `1.20`
 
 ## Environment
 
-You should edit `.docker-compose.env`:
+You should edit `docker-compose.env`:
 
 | Name                |                                   Description                                    | Default |
 | :------------------ | :------------------------------------------------------------------------------: | :------ |
